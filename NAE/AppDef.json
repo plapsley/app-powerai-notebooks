@@ -31,7 +31,7 @@
                     "name": "-s",
                     "description": "-s",
                     "type": "CONST",
-                    "value": "/opt/DL/tensorflow/bin/chainer-activate",
+                    "value": "/opt/DL/chainer/bin/chainer-activate",
                     "positional": false,
                     "required": true
                 },
@@ -79,7 +79,7 @@
                     "name": "-s",
                     "description": "-s",
                     "type": "CONST",
-                    "value": "/opt/DL/tensorflow/bin/theano-activate",
+                    "value": "/opt/DL/theano/bin/theano-activate",
                     "positional": false,
                     "required": true
                 },

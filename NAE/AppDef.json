@@ -9,7 +9,11 @@
         "IBM POWER/Machine Learning/Deep Learning",
         "IBM POWER/Machine Learning/Artificial Intelligence"
     ],
-    "machines": ["*"],
+    "machines": [
+        "np8gk*",
+        "np8g*",
+        "np8*"
+    ],
     "vault-types": [
         "FILE",
         "BLOCK",

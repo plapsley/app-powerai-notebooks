@@ -13,8 +13,7 @@
     ],
     "machines": [
         "np8gk*",
-        "np8g*",
-        "np8*"
+        "np8g*"
     ],
     "vault-types": [
         "FILE",

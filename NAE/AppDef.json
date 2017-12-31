@@ -1,7 +1,7 @@
 {
-    "name": "PowerAI Notebooks",
-    "description": "Jupyter Notebooks for various PowerAI ML/DL frameworks, including TensorFlow&trade;, Chainer, and Theano.",
-    "author": "Nimbix, Inc.",
+    "name": "Deep Learning for Computer Vision with TensorFlow",
+    "description": "Jupyter Notebooks for the Embedded Vision Alliance class on deep learning for computer vision with TensorFlow.",
+    "author": "Embedded Vision Alliance, heavily based on work by Nimbix, Inc.",
     "licensed": true,
     "classifications": [
         "Machine Learning/Deep Learning",

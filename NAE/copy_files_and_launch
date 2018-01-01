@@ -2,4 +2,4 @@
 
 cp -f /usr/local/dlcvtf/data/* /tmp
 cp -f /usr/local/dlcvtf/notebooks/* /data
-/opt/DL/tensorflow/bin/tensorflow-activate
+source /opt/DL/tensorflow/bin/tensorflow-activate

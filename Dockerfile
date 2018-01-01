@@ -13,8 +13,8 @@ RUN mkdir /usr/local/dlcvtf
 RUN mkdir /usr/local/dlcvtf/notebooks
 RUN mkdir /usr/local/dlcvtf/data
 RUN mkdir /usr/local/dlcvtf/bin
-#COPY NAE/copy_files_and_launch /usr/local/dlcvtf/bin
-#RUN chmod 755 /usr/local/dlcvtf/bin/copy_files_and_launch
+COPY NAE/copy_files_and_launch /usr/local/dlcvtf/bin
+RUN chmod 755 /usr/local/dlcvtf/bin/copy_files_and_launch
 ADD https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/hamburg/00_test_install.ipynb /usr/local/dlcvtf/notebooks/00_test_install.ipynb
 ADD https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/hamburg/01_linear_regression.ipynb /usr/local/dlcvtf/notebooks/01_linear_regression.ipynb
 ADD https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/hamburg/02_logistic_regression_mnist.ipynb /usr/local/dlcvtf/notebooks/02_logistic_regression_mnist.ipynb

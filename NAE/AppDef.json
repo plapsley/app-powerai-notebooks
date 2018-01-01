@@ -12,7 +12,8 @@
         "IBM POWER/Data Science"
     ],
     "machines": [
-        "np8gk1"
+        "np8gk*",
+        "np8g*"
     ],
     "vault-types": [
         "FILE",
@@ -21,7 +22,7 @@
         "OBJECT"
     ],
     "commands": {
-        "Start Class": {
+        "TensorFlow": {
             "path": "/usr/local/bin/nimbix_notebook",
             "interactive": true,
             "name": "TensorFlow&trade;",

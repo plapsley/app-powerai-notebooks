@@ -46,8 +46,8 @@ RUN curl https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/data/train
 RUN chmod 644 ${DLCVTF}/oneDay/data/*
 RUN chmod 644 ${DLCVTF}/oneDay/notebooks/*
 
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/00_test_install.ipynb \
-#	${DLCVTF}/threeDay/notebooks/00_test_install.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/00_test_install.ipynb \
+	${DLCVTF}/threeDay/notebooks/00_test_install.ipynb
 #ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/01_linear_regression.ipynb \
 #	${DLCVTF}/threeDay/notebooks/01_linear_regression.ipynb
 #ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/02_perceptron.ipynb \

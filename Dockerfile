@@ -46,41 +46,41 @@ RUN curl https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/data/train
 RUN chmod 644 ${DLCVTF}/oneDay/data/*
 RUN chmod 644 ${DLCVTF}/oneDay/notebooks/*
 
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/00_test_install.ipynb \
-	${DLCVTF}/threeDay/notebooks/00_test_install.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/01_linear_regression.ipynb \
-	${DLCVTF}/threeDay/notebooks/01_linear_regression.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/02_perceptron.ipynb \
-	${DLCVTF}/threeDay/notebooks/02_perceptron.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/03_multi_class.ipynb \
-	${DLCVTF}/threeDay/notebooks/03_multi_class.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/04_deep_network.ipynb \
-	${DLCVTF}/threeDay/notebooks/04_deep_network.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/05_tensorflow_linear_regression.ipynb \
-	${DLCVTF}/threeDay/notebooks/05_tensorflow_linear_regression.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/06_tensorflow_logistic_regression.ipynb \
-	${DLCVTF}/threeDay/notebooks/06_tensorflow_logistic_regression.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/07_tensorflow_deep_network.ipynb \
-	${DLCVTF}/threeDay/notebooks/07_tensorflow_deep_network.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/08_MNIST_Slim_CNN.ipynb \
-	${DLCVTF}/threeDay/notebooks/08_MNIST_Slim_CNN.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/09_MNIST_Slim_CNN_visualize.ipynb \
-	${DLCVTF}/threeDay/notebooks/09_MNIST_Slim_CNN_visualize.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/10_Inception_retraining.ipynb \
-	${DLCVTF}/threeDay/notebooks/10_Inception_retraining.ipynb
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex01.py ${DLCVTF}/threeDay/notebooks/ex01.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex02.py ${DLCVTF}/threeDay/notebooks/ex02.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex03.py ${DLCVTF}/threeDay/notebooks/ex03.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex04.py ${DLCVTF}/threeDay/notebooks/ex04.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex05.py ${DLCVTF}/threeDay/notebooks/ex05.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex06.py ${DLCVTF}/threeDay/notebooks/ex06.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex07.py ${DLCVTF}/threeDay/notebooks/ex07.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py ${DLCVTF}/threeDay/notebooks/ex08.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py ${DLCVTF}/threeDay/notebooks/ex09.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py ${DLCVTF}/threeDay/notebooks/ex10.py
-RUN chmod 644 ${DLCVTF}/threeDay/data/*
-RUN chmod 644 ${DLCVTF}/threeDay/notebooks/*
-RUN chmod 755 ${DLCVTF}/threeDay/notebooks/*.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/00_test_install.ipynb \
+#	${DLCVTF}/threeDay/notebooks/00_test_install.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/01_linear_regression.ipynb \
+#	${DLCVTF}/threeDay/notebooks/01_linear_regression.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/02_perceptron.ipynb \
+#	${DLCVTF}/threeDay/notebooks/02_perceptron.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/03_multi_class.ipynb \
+#	${DLCVTF}/threeDay/notebooks/03_multi_class.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/04_deep_network.ipynb \
+#	${DLCVTF}/threeDay/notebooks/04_deep_network.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/05_tensorflow_linear_regression.ipynb \
+#	${DLCVTF}/threeDay/notebooks/05_tensorflow_linear_regression.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/06_tensorflow_logistic_regression.ipynb \
+#	${DLCVTF}/threeDay/notebooks/06_tensorflow_logistic_regression.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/07_tensorflow_deep_network.ipynb \
+#	${DLCVTF}/threeDay/notebooks/07_tensorflow_deep_network.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/08_MNIST_Slim_CNN.ipynb \
+#	${DLCVTF}/threeDay/notebooks/08_MNIST_Slim_CNN.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/09_MNIST_Slim_CNN_visualize.ipynb \
+#	${DLCVTF}/threeDay/notebooks/09_MNIST_Slim_CNN_visualize.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/10_Inception_retraining.ipynb \
+#	${DLCVTF}/threeDay/notebooks/10_Inception_retraining.ipynb
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex01.py ${DLCVTF}/threeDay/notebooks/ex01.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex02.py ${DLCVTF}/threeDay/notebooks/ex02.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex03.py ${DLCVTF}/threeDay/notebooks/ex03.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex04.py ${DLCVTF}/threeDay/notebooks/ex04.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex05.py ${DLCVTF}/threeDay/notebooks/ex05.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex06.py ${DLCVTF}/threeDay/notebooks/ex06.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex07.py ${DLCVTF}/threeDay/notebooks/ex07.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py ${DLCVTF}/threeDay/notebooks/ex08.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py ${DLCVTF}/threeDay/notebooks/ex09.py
+#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py ${DLCVTF}/threeDay/notebooks/ex10.py
+#RUN chmod 644 ${DLCVTF}/threeDay/data/*
+#RUN chmod 644 ${DLCVTF}/threeDay/notebooks/*
+#RUN chmod 755 ${DLCVTF}/threeDay/notebooks/*.py
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate

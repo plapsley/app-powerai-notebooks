@@ -1,8 +1,11 @@
 #!/bin/bash
 
-
 S3='https://s3-us-west-2.amazonaws.com/percptv/threeDay'
 cd /data
+set +e
+mkdir .dlcvtf_old
+mv *.py *.ipynb .dlcvtf_old
+set -e
 curl -O ${S3}/00_test_install.ipynb 
 curl -O ${S3}/01_linear_regression.ipynb 
 curl -O ${S3}/02_perceptron.ipynb

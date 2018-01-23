@@ -1,0 +1,5 @@
+#!/bin/bash
+
+cp -f /usr/local/dlcvtf/threeDay/data/* /tmp
+cp -f /usr/local/dlcvtf/threeDay/notebooks/* /data
+source /opt/DL/tensorflow/bin/tensorflow-activate

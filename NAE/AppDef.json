@@ -22,17 +22,41 @@
         "OBJECT"
     ],
     "commands": {
-        "TensorFlow": {
+        "OneDay": {
             "path": "/usr/local/bin/nimbix_notebook",
             "interactive": true,
             "name": "TensorFlow&trade;",
-            "description": "Launch a Jupyter Notebook for Deep Learning for Computer Vision with TensorFlow.",
+            "description": "Launch Jupyter Notebooks for One-Day Class.",
             "parameters": {
                 "-s": {
                     "name": "-s",
                     "description": "-s",
                     "type": "CONST",
-                    "value": "/usr/local/dlcvtf/bin/copy_files_and_launch",
+                    "value": "/usr/local/dlcvtf/bin/copy_launch_oneDay",
+                    "positional": false,
+                    "required": true
+                },
+                "-r": {
+                    "name": "Requirements file",
+                    "description": "Select a text file to use as a list of pip requirements (e.g. requirements.txt)",
+                    "type": "FILE",
+                    "positional": false,
+                    "required": false,
+                    "filter": "*.txt"
+                }
+            }
+        },
+        "ThreeDay": {
+            "path": "/usr/local/bin/nimbix_notebook",
+            "interactive": true,
+            "name": "TensorFlow&trade;",
+            "description": "Launch Jupyter Notebooks for Three-Day Class.",
+            "parameters": {
+                "-s": {
+                    "name": "-s",
+                    "description": "-s",
+                    "type": "CONST",
+                    "value": "/usr/local/dlcvtf/bin/copy_launch_threeDay",
                     "positional": false,
                     "required": true
                 },

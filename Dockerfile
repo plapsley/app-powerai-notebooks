@@ -19,8 +19,10 @@ RUN mkdir ${DLCVTF}/threeDay
 RUN mkdir ${DLCVTF}/threeDay/notebooks
 RUN mkdir ${DLCVTF}/threeDay/data
 RUN mkdir ${DLCVTF}/bin
-COPY NAE/copy_files_and_launch ${DLCVTF}/bin
-RUN chmod 755 ${DLCVTF}/bin/copy_files_and_launch
+COPY NAE/copy_launch_oneDay ${DLCVTF}/bin
+RUN chmod 755 ${DLCVTF}/bin/copy_launch_oneDay
+COPY NAE/copy_launch_threeDay ${DLCVTF}/bin
+RUN chmod 755 ${DLCVTF}/bin/copy_launch_threeDay
 
 ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/00_test_install.ipynb \
 	${DLCVTF}/oneDay/notebooks/00_test_install.ipynb

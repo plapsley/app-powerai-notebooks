@@ -68,16 +68,16 @@ ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/09_MNIST_Slim_CNN_visual
 	${DLCVTF}/threeDay/notebooks/09_MNIST_Slim_CNN_visualize.ipynb
 ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/10_Inception_retraining.ipynb \
 	${DLCVTF}/threeDay/notebooks/10_Inception_retraining.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex01.py ${DLCVTF}/threeDay/notebooks/ex01.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex02.py ${DLCVTF}/threeDay/notebooks/ex02.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex03.py ${DLCVTF}/threeDay/notebooks/ex03.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex04.py ${DLCVTF}/threeDay/notebooks/ex04.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex05.py ${DLCVTF}/threeDay/notebooks/ex05.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex06.py ${DLCVTF}/threeDay/notebooks/ex06.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex07.py ${DLCVTF}/threeDay/notebooks/ex07.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py ${DLCVTF}/threeDay/notebooks/ex08.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py ${DLCVTF}/threeDay/notebooks/ex09.py
-#ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py ${DLCVTF}/threeDay/notebooks/ex10.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex01.py ${DLCVTF}/threeDay/notebooks/ex01.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex02.py ${DLCVTF}/threeDay/notebooks/ex02.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex03.py ${DLCVTF}/threeDay/notebooks/ex03.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex04.py ${DLCVTF}/threeDay/notebooks/ex04.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex05.py ${DLCVTF}/threeDay/notebooks/ex05.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex06.py ${DLCVTF}/threeDay/notebooks/ex06.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex07.py ${DLCVTF}/threeDay/notebooks/ex07.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py ${DLCVTF}/threeDay/notebooks/ex08.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py ${DLCVTF}/threeDay/notebooks/ex09.py
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py ${DLCVTF}/threeDay/notebooks/ex10.py
 #RUN chmod 644 ${DLCVTF}/threeDay/data/*
 #RUN chmod 644 ${DLCVTF}/threeDay/notebooks/*
 #RUN chmod 755 ${DLCVTF}/threeDay/notebooks/*.py

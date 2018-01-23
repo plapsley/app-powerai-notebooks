@@ -11,16 +11,16 @@ COPY NAE/help.html /etc/NAE/help.html
 
 ENV	DLCVTF /usr/local/dlcvtf
 
-RUN mkdir $DLCVTF
-RUN mkdir $DLCVTF/1day
-RUN mkdir $DLCVTF/1day/notebooks
-RUN mkdir $DLCVTF/1day/data
-RUN mkdir $DLCVTF/3day
-RUN mkdir $DLCVTF/3day/notebooks
-RUN mkdir $DLCVTF/3day/data
-RUN mkdir $DLCVTF/bin
-COPY NAE/copy_files_and_launch $DLCVTF/bin
-RUN chmod 755 $DLCVTF/bin/copy_files_and_launch
+#RUN mkdir $DLCVTF
+#RUN mkdir $DLCVTF/1day
+#RUN mkdir $DLCVTF/1day/notebooks
+#RUN mkdir $DLCVTF/1day/data
+#RUN mkdir $DLCVTF/3day
+#RUN mkdir $DLCVTF/3day/notebooks
+#RUN mkdir $DLCVTF/3day/data
+#RUN mkdir $DLCVTF/bin
+#COPY NAE/copy_files_and_launch $DLCVTF/bin
+#RUN chmod 755 $DLCVTF/bin/copy_files_and_launch
 
 #ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/00_test_install.ipynb \
 #	$DLCVTF/1day/notebooks/00_test_install.ipynb
@@ -78,9 +78,9 @@ RUN chmod 755 $DLCVTF/bin/copy_files_and_launch
 #ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py $DLCVTF/3day/notebooks/ex08.py
 #ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py $DLCVTF/3day/notebooks/ex09.py
 #ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py $DLCVTF/3day/notebooks/ex10.py
-RUN chmod 644 $DLCVTF/3day/data/*
-RUN chmod 644 $DLCVTF/3day/notebooks/*
-RUN chmod 755 $DLCVTF/3day/notebooks/*.py
+#RUN chmod 644 $DLCVTF/3day/data/*
+#RUN chmod 644 $DLCVTF/3day/notebooks/*
+#RUN chmod 755 $DLCVTF/3day/notebooks/*.py
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate

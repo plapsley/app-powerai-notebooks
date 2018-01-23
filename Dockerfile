@@ -22,19 +22,19 @@ RUN mkdir ${DLCVTF}/bin
 COPY NAE/copy_files_and_launch ${DLCVTF}/bin
 RUN chmod 755 ${DLCVTF}/bin/copy_files_and_launch
 
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/00_test_install.ipynb \
-#	${DLCVTF}/1day/notebooks/00_test_install.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/01_linear_regression.ipynb \
-#	${DLCVTF}/1day/notebooks/01_linear_regression.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/02_logistic_regression_mnist.ipynb \
-#	${DLCVTF}/1day/notebooks/02_logistic_regression_mnist.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/03_deep_neural_network_mnist.ipynb \
-#	${DLCVTF}/1day/notebooks/03_deep_neural_network_mnist.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/04_MNIST_Slim_CNN.ipynb \
-#	${DLCVTF}/1day/notebooks/04_MNIST_Slim_CNN.ipynb
-#ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/05_MNIST_Slim_CNN_visualize.ipynb \
-#	${DLCVTF}/1day/notebooks/05_MNIST_Slim_CNN_visualize.ipynb
-#
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/00_test_install.ipynb \
+	${DLCVTF}/1day/notebooks/00_test_install.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/01_linear_regression.ipynb \
+	${DLCVTF}/1day/notebooks/01_linear_regression.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/02_logistic_regression_mnist.ipynb \
+	${DLCVTF}/1day/notebooks/02_logistic_regression_mnist.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/03_deep_neural_network_mnist.ipynb \
+	${DLCVTF}/1day/notebooks/03_deep_neural_network_mnist.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/04_MNIST_Slim_CNN.ipynb \
+	${DLCVTF}/1day/notebooks/04_MNIST_Slim_CNN.ipynb
+ADD https://s3-us-west-2.amazonaws.com/percptv/oneDay/05_MNIST_Slim_CNN_visualize.ipynb \
+	${DLCVTF}/1day/notebooks/05_MNIST_Slim_CNN_visualize.ipynb
+
 #RUN curl https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/data/t10k-images-idx3-ubyte.gz \
 #	-o ${DLCVTF}/1day/data/t10k-images-idx3-ubyte.gz
 #RUN curl https://s3-us-west-2.amazonaws.com/percptv-hamburg-us-west-2/data/t10k-labels-idx1-ubyte.gz \

@@ -11,7 +11,7 @@ COPY NAE/help.html /etc/NAE/help.html
 
 ENV	DLCVTF /usr/local/dlcvtf
 
-#RUN mkdir $DLCVTF
+RUN mkdir $DLCVTF
 #RUN mkdir $DLCVTF/1day
 #RUN mkdir $DLCVTF/1day/notebooks
 #RUN mkdir $DLCVTF/1day/data

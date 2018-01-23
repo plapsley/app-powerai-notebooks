@@ -1,5 +1,5 @@
 #!/bin/bash
 
-cp -f /usr/local/dlcvtf/data/* /tmp
-cp -f /usr/local/dlcvtf/notebooks/* /data
+cp -f /usr/local/dlcvtf/1day/data/* /tmp
+cp -f /usr/local/dlcvtf/1day/notebooks/* /data
 source /opt/DL/tensorflow/bin/tensorflow-activate

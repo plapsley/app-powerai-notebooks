@@ -26,7 +26,7 @@
             "path": "/usr/local/bin/nimbix_notebook",
             "interactive": true,
             "name": "One Day Class",
-            "description": "Launch Jupyter Notebooks for one-day Class on deep learning for computer vision with TensorFlow.",
+            "description": "Launch Jupyter Notebooks for our one-day class on deep learning for computer vision with TensorFlow.",
             "parameters": {
                 "-s": {
                     "name": "-s",
@@ -50,7 +50,7 @@
             "path": "/usr/local/bin/nimbix_notebook",
             "interactive": true,
             "name": "Three Day Class",
-            "description": "Launch Jupyter Notebooks for three-day class on deep learning for computer vision with TensorFlow.",
+            "description": "Launch Jupyter Notebooks for our three-day class on deep learning for computer vision with TensorFlow.",
             "parameters": {
                 "-s": {
                     "name": "-s",

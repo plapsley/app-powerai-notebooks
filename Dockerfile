@@ -80,9 +80,9 @@ ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex07.py ${DLCVTF}/threeD
 ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex08.py ${DLCVTF}/threeDay/notebooks/ex08.py
 ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex09.py ${DLCVTF}/threeDay/notebooks/ex09.py
 ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/ex10.py ${DLCVTF}/threeDay/notebooks/ex10.py
-ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/threeDayData.zip ${DLCVTF}/threeDay/data/threeDayData.zip
+ADD https://s3-us-west-2.amazonaws.com/percptv/threeDay/threeDayData.tar ${DLCVTF}/threeDay/data/
 RUN chmod 644 ${DLCVTF}/threeDay/notebooks/*
-RUN chmod 644 ${DLCVTF}/threeDay/data/*
+RUN chmod -R go+rX ${DLCVTF}/threeDay/data
 
 COPY NAE/AppDef.json /etc/NAE/AppDef.json
 RUN curl --fail -X POST -d @/etc/NAE/AppDef.json https://api.jarvice.com/jarvice/validate

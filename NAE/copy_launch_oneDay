@@ -1,15 +1,15 @@
 #!/bin/bash
 
 S3='https://s3-us-west-2.amazonaws.com/percptv/oneDay'
-echo cd /data
-echo mkdir -f .dlcvtf_old
-echo mv *.py *.ipynb .dlcvtf_old
-echo curl -O ${S3}/00_test_install.ipynb
-echo curl -O ${S3}/01_linear_regression.ipynb
-echo curl -O ${S3}/02_logistic_regression_mnist.ipynb
-echo curl -O ${S3}/03_deep_neural_network_mnist.ipynb
-echo curl -O ${S3}/04_MNIST_Slim_CNN.ipynb
-echo curl -O ${S3}/05_MNIST_Slim_CNN_visualize.ipynb
+cd /data
+mkdir -f .dlcvtf_old
+mv *.py *.ipynb .dlcvtf_old
+curl -O ${S3}/00_test_install.ipynb
+curl -O ${S3}/01_linear_regression.ipynb
+curl -O ${S3}/02_logistic_regression_mnist.ipynb
+curl -O ${S3}/03_deep_neural_network_mnist.ipynb
+curl -O ${S3}/04_MNIST_Slim_CNN.ipynb
+curl -O ${S3}/05_MNIST_Slim_CNN_visualize.ipynb
 
-echo cp -f /usr/local/dlcvtf/oneDay/data/* /tmp
-echo source /opt/DL/tensorflow/bin/tensorflow-activate
+cp -f /usr/local/dlcvtf/oneDay/data/* /tmp
+source /opt/DL/tensorflow/bin/tensorflow-activate

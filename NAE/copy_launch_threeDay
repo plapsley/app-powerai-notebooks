@@ -3,29 +3,45 @@
 S3='https://s3-us-west-2.amazonaws.com/percptv/threeDay'
 cd /data
 set +e
-mkdir .dlcvtf_old
-mv *.py *.ipynb .dlcvtf_old
-set -e
-curl -O ${S3}/00_test_install.ipynb 
-curl -O ${S3}/01_linear_regression.ipynb 
-curl -O ${S3}/02_perceptron.ipynb
-curl -O ${S3}/03_multi_class.ipynb
-curl -O ${S3}/04_deep_network.ipynb
-curl -O ${S3}/05_tensorflow_linear_regression.ipynb
-curl -O ${S3}/06_tensorflow_logistic_regression.ipynb
-curl -O ${S3}/07_tensorflow_deep_network.ipynb
-curl -O ${S3}/08_MNIST_Slim_CNN.ipynb
-curl -O ${S3}/09_MNIST_Slim_CNN_visualize.ipynb
-curl -O ${S3}/10_Inception_retraining.ipynb
-curl -O ${S3}/ex01.py
-curl -O ${S3}/ex02.py
-curl -O ${S3}/ex03.py
-curl -O ${S3}/ex04.py
-curl -O ${S3}/ex05.py
-curl -O ${S3}/ex06.py
-curl -O ${S3}/ex07.py
-curl -O ${S3}/ex08.py
-curl -O ${S3}/ex09.py
-curl -O ${S3}/ex10.py
+old_files=0
+directory_empty=1
+if [[ $(find . -maxdepth 1 -mtime +7 \( -name "*.py" -o -name "*.ipynb" \)) ]] ; then
+	old_files=1
+fi
+if [[ $(ls) ]] ; then
+	directory_empty=0
+fi
+echo old_files is $old_files
+echo directory_empty is $directory_empty
+if [ "$old_files" -eq 1 -o "$directory_empty" -eq 1 ]; then
+	mkdir .dlcvtf_old
+	mv *.py *.ipynb .dlcvtf_old
+	curl -O ${S3}/00_test_install.ipynb 
+	curl -O ${S3}/01_linear_regression.ipynb 
+	curl -O ${S3}/02_perceptron.ipynb
+	curl -O ${S3}/03_multi_class.ipynb
+	curl -O ${S3}/04_deep_network.ipynb
+	curl -O ${S3}/05_tensorflow_linear_regression.ipynb
+	curl -O ${S3}/06_tensorflow_logistic_regression.ipynb
+	curl -O ${S3}/07_tensorflow_deep_network.ipynb
+	curl -O ${S3}/08_MNIST_Slim_CNN.ipynb
+	curl -O ${S3}/09_tensorflow_deep_network_save.ipynb
+	curl -O ${S3}/09a_tensorflow_deep_network_restore.ipynb
+	curl -O ${S3}/10_MNIST_Slim_CNN_visualize.ipynb
+	curl -O ${S3}/11_Inception_retraining.ipynb
+	curl -O ${S3}/ex01.py
+	curl -O ${S3}/ex02.py
+	curl -O ${S3}/ex03.py
+	curl -O ${S3}/ex04.py
+	curl -O ${S3}/ex05.py
+	curl -O ${S3}/ex06.py
+	curl -O ${S3}/ex07.py
+	curl -O ${S3}/ex08.py
+	curl -O ${S3}/ex09.py
+	curl -O ${S3}/ex09a.py
+	curl -O ${S3}/ex10.py
+	curl -O ${S3}/ex11.py
+fi
 
+set -e
 source /opt/DL/tensorflow/bin/tensorflow-activate
